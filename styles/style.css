@@ -1,0 +1,333 @@
+/*127928*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #222831; 
+    height: 20%; 
+}
+
+nav{
+    position: fixed;
+    background-color:#222831;
+    width: 100%;
+    opacity: 1;
+}
+
+ul{
+    list-style: none;
+}
+
+#listaNavegacion{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+#botonesNavegacion{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #EEEEEE
+}
+
+a :hover{
+    color: red;
+}
+
+li{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.navItem{
+    text-decoration: none;
+    margin: 1rem 1rem 1rem;
+}
+
+.navItem a:hover{
+    color: #FFD369;
+    transition: 0.3s;
+}
+
+.boton-navegacion{
+    height: 32px;
+    width: 32px;
+}
+
+#carrito{
+    color: #EEEEEE;
+    padding: 1rem  1rem  1rem;
+}
+
+#titulo{
+    font-family: 'Lobster', cursive;
+    padding: 2rem;
+    margin-top: 5rem;
+    font-size: 5rem;
+}
+
+#subtitulo{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+}
+
+#lugar{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+
+.hero{
+    background-color: #393E46;
+}
+
+.nosotros{
+    background-color: #EEEEEE;
+}
+
+.presencias{
+    background-color: #393E46;
+}
+
+footer{
+    background-color: #FFD369;
+}
+
+#contenedorPrincipal{
+    background-color: #FFD369;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedorPrincipalCarrito{
+    background-color: #FFD369;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedor-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+#contenedor-nosotros{
+    padding: 2rem;
+}
+
+#texto-nosotros{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+    padding: 0 5rem 5rem;
+}
+
+#marcas{
+    display: flex;
+    width: 50%;
+}
+
+#contenedor-guitarras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guitar-card{
+    height: 600px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: .5rem;
+    background-color: white;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0,.4);
+    opacity: 1;
+    transition: .4s;
+    
+}
+
+/*img:hover{
+    opacity: 0.7;
+    overflow: hidden;
+}*/
+
+#contenedor-producto{
+    margin: 1rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#datos-guitarra{
+    
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #393E46;
+    border-radius: 10px;
+    color: #EEEEEE;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.btn-comprar{
+    height: 40px;
+    width: 150px;
+    background-color: #393E46;
+    margin: .2rem;
+    color: #EEEEEE;
+    font-family: 'Lobster', cursive;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+.btn-comprar:hover{
+    background-color: #5e5e5e;
+    transition: .3s;
+}
+
+/*----Carrito----*/
+
+#titulo-carrito{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+
+#subtitulo-carrito{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+.producto-individual{
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    align-items: center;
+    border-color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 750px;
+    height: 112px;
+}
+
+.boton-borrar{
+    border-radius: 5px;
+    background-color: rgb(192, 59, 59);
+    color: white;
+    padding: 3px 10px;
+    margin: 3px;
+    margin-right: 1rem;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.boton-borrar:hover{
+    background-color: rgb(228, 150, 150);
+    transition: 0.3s;
+}
+
+.img-carrito{
+    width: 60px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+#id-producto{
+    padding: 1rem;
+    
+}
+
+#contenedor-total{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    align-items: center;
+    border-color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    width: 750px;
+    height: 112px;
+}
+
+#boton-pagar{
+    background-color:#393E46;
+    color: white;
+    border-radius: 1rem;
+    padding: 3px 10px;
+    margin: 3px;
+    margin-left: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+#boton-pagar:hover{
+    background-color:#222831;
+    transition: .3seg;
+}
+
+#boton-vaciar{
+    background-color:#ca4740;
+    color: white;
+    border-radius: 1rem;
+    padding: 3px 10px;
+    margin: 3px;
+    margin-left: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+#boton-vaciar:hover{
+    background-color: #e12e24;
+    transition: 0.3s;
+}
+
+#carrito-vacio{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    align-items: center;
+    border-color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    width: 750px;
+    height: 112px;
+}
